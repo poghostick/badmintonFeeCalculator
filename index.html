@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Badminton Court Booking Calculator</title>
+	<style>
+		label {
+			display: block;
+            margin-top: 15px;
+			margin-bottom: 1px;
+		}
+		input[type="submit"] {
+			margin-top: 20px;
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+    <h1>Badminton Fee Calculator</h1>
+    <form>
+      <div class="form-group">
+        <label for="with-multisport">№ Multisport-holders:</label>
+        <select id="with-multisport" name="with-multisport">
+            <option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+            <option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+            <option value="6">6</option>
+			<option value="7">7</option>
+        </select>
+      </div>
+    </b>
+      <div class="form-group">
+        <label for="without-multisport">№ players without Multisport:</label>
+        <select id="without-multisport" name="without-multisport">
+            <option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+            <option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+            <option value="6">6</option>
+			<option value="7">7</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="fee-per-30-min">Fee per 30 minutes in CZK:</label>
+        <input type="number" id="fee-per-30-min" name="fee-per-30-min" required>
+      </div>
+    </b>
+      <div class="form-group">
+        <label for="duration">Duration:</label>
+        <select id="duration" name="duration">
+          <option value="30">30 minutes</option>
+          <option value="60">60 minutes</option>
+          <option value="90">90 minutes</option>
+          <option value="120">120 minutes</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="num-courts">Number of courts:</label>
+        <select id="num-courts" name="num-courts">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="total-fee">Total Fee in CZK:</label>
+        <input type="text" id="total-fee" name="total-fee" readonly>
+      </div>
+      <div class="form-group">
+        <label for="fee-multisport">Fee for Multisport holders in CZK:</label>
+        <input type="text" id="fee-multisport" name="fee-multisport" readonly>
+      </div>
+      <div class="form-group">
+        <label for="fee-no-multisport">Fee for those without Multisport in CZK:</label>
+        <input type="text" id="fee-no-multisport" name="fee-no-multisport" readonly>
+      </div>
+      <button type="button" id="calculate-btn" onclick="getInteger()">Calculate</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
