@@ -6,7 +6,7 @@ function getInteger() {
   const numCourts = parseInt(document.getElementById("num-courts").value);
 
   let numRounds = Math.round(duration / 30)
-  let totalFee = feePer30Min * Math.max(numRounds - withMs, 0) * (numCourts)
+  let totalFee = feePer30Min * Math.max(numCourts * numRounds - withMs, 0)
   let feeWoMs = totalFee / ((numRounds - 1) / numRounds * withMs + woMs)
   let feeWithMs = (numRounds - 1) / numRounds * feeWoMs
   
