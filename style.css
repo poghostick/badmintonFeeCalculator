@@ -12,7 +12,7 @@ input{
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  font-size: inherit;
+  font-size: 16px;
 }
 
 /* Use media queries to adjust the font size and input size for mobile devices */
