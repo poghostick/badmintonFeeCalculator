@@ -1,0 +1,31 @@
+body {
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 1px;
+}
+
+input{
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+/* Use media queries to adjust the font size and input size for mobile devices */
+@media (max-width: 767px) {
+    /* Decrease the font size for small screens */
+    body {
+      font-size: 14px;
+    }
+  
+    /* Decrease the size of the input element for small screens */
+    input {
+      font-size: 14px;
+      width: 80%;
+      max-width: 300px;
+    }
+  }
