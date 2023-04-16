@@ -20,20 +20,20 @@ input{
 @media only screen and (min-width: 768px) {
     /* Decrease the font size for small screens */
     body {
-      font-size: 12px;
+      font-size: 16px;
     }
 
     label {
       display: block;
       margin-top: 15px;
       margin-bottom: 1px;
-      font-size: 12px;
+      font-size: 16px;
     }
   
     /* Decrease the size of the input element for small screens */
     input {
-      font-size: 12px;
-      /* width: 80%;
+      font-size: 16px;
+      width: 80%;
       /* height: 4.5em; */
       /* max-width: 300px; */
       height: 2em;
