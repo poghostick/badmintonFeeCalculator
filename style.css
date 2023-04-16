@@ -20,7 +20,7 @@ input{
 }
 
 /* Use media queries to adjust the font size and input size for mobile devices */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 500px) {
     /* Decrease the font size for small screens */
     body {
       font-size: 16px;
